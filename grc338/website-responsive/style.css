@@ -59,11 +59,6 @@ h2 {
 	
 h3 {
 	font-size: 1.25em;
-	margin: 1em 0em .25em;
-}
-
-h3.hours { /*had to make a new class because h3 is connected to categories in the Menu, but had different margins than the one on contact page. */
-	font-size: 1.25em;
 	margin: 1.5em 0em .25em;
 }
 
