@@ -5,6 +5,7 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 img {
     width: 100%;
     display: block;
+    border-radius: .5em;
 }
 
 figure {
@@ -16,9 +17,10 @@ h1 {
 }
 
 h2 {
-    font-family: serif;
-    color: rgb(91, 115, 146);
-    font-weight: 900;
+    font-family: "ivypresto-display", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #104239;
     font-size: 3em;
     margin: .2em .2em;
 }
@@ -36,14 +38,17 @@ a {
 }
 
 nav a {
-    color: rgb(91, 115, 146);
-    font-family: sans-serif;
-    font-weight: 900;
+    color: #104239;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.25em;
 }
 
 p {
-    font-family: sans-serif;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: rgb(0, 0, 0);
     margin: 0em .5em;
     line-height: 1.5;
@@ -61,15 +66,20 @@ header {
     padding: .5em;
 }
 
+body {
+    background-color: #fefefe;
+}
+
 div.container, div.home-container {
     max-width: 40em;
     margin: auto;
 }
 
 .tertiary-teaser {
-    border-top: 1px solid rgb(95, 125, 164);
     margin: .5em;
-    padding-top: .5em;
+    padding: .5em 0em;
+    border-bottom: solid 1px #104239;
+    corner-shape: var(2em);
 }
 
 .tertiary-teaser h2,
@@ -79,9 +89,10 @@ div.container, div.home-container {
 }
 
 figcaption {
-    font-family: sans-serif;
-    color: rgb(128, 128, 128);
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 400;
     font-style: italic;
+    color: rgb(128, 128, 128);
     margin: .5em;
 }
 
@@ -94,7 +105,6 @@ article p {
 }
 
 aside{
-    background-color: rgb(197, 204, 255);
     padding: 1em .5em;
 }
 
@@ -103,14 +113,16 @@ aside p {
 }
 
 footer{
-    background-color: rgb(91, 115, 146);
+    background-color: #104239;
     padding:1em .5em;
     box-sizing: border-box;
 }
 
 footer p{
     color: rgb(255, 255, 255);
-    font-family: sans-serif;
+    font-family: "hanken-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0em;
 }
 
