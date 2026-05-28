@@ -45,12 +45,11 @@ nav a {
     font-size: 1.25em;
 }
 
-p {
+p, ul {
     font-family: "hanken-grotesk", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(0, 0, 0);
-    margin: 0em .5em;
+    color: rgb(86, 86, 86);
     line-height: 1.5;
 }
 
@@ -76,8 +75,7 @@ div.container, div.home-container {
 }
 
 .tertiary-teaser {
-    margin: .5em;
-    padding: .5em 0em;
+    margin-bottom: 1em;
     border-bottom: solid 1px #104239;
     corner-shape: var(2em);
 }
@@ -105,7 +103,7 @@ article p {
 }
 
 aside{
-    padding: 1em .5em;
+    margin-left: 1em;
 }
 
 aside p {
@@ -126,6 +124,115 @@ footer p{
     margin: 0em;
 }
 
+main.photo {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/2;
+}
+
+main.photo figure{
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+}
+
+main.photo figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5em;
+}
+
+nav.gallery label {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: block;
+}
+
+nav.gallery label img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+main.newsletter {
+    min-height: 20em;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 1em;
+}
+
+main.newsletter section {
+    width: 100%;
+    max-width: 40em;
+}
+
+main.newsletter form ul {
+    list-style: none;
+}
+
+main.newsletter form li {
+    margin-bottom: 1.5em;
+}
+
+main.newsletter label,
+main.newsletter legend {
+    display: flex;
+    margin-bottom: .5em;
+}
+
+main.newsletter input[type="text"],
+main.newsletter input[type="email"] {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #cfcfcf;
+    border-radius: .5em;
+    box-sizing: border-box;
+}
+
+main.newsletter fieldset {
+    border: none;
+}
+
+main.newsletter fieldset label {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin-bottom: .5em;
+}
+
+main.newsletter input[type="checkbox"] {
+    display: inline-block;
+}
+
+main.newsletter button {
+    background-color: #104239;
+    color: white;
+    border: none;
+    padding: .75em 1.5em;
+    border-radius: 2em;
+    cursor: pointer;
+}
 @media screen and (min-width: 40em) {
 	nav ul li{
 		display:inline;
