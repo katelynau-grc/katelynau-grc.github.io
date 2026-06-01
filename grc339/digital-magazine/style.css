@@ -5,7 +5,6 @@ html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 img {
     width: 100%;
     display: block;
-    border-radius: .5em;
 }
 
 figure {
@@ -23,6 +22,7 @@ h2 {
     color: #104239;
     font-size: 3em;
     margin: .2em .2em;
+    line-height: 1.2em;
 }
 
 h2.secondary {
@@ -100,10 +100,6 @@ article h2 {
 
 article p {
     margin-bottom: 1.5em;
-}
-
-aside{
-    margin-left: 1em;
 }
 
 aside p {
@@ -227,7 +223,7 @@ main.newsletter input[type="checkbox"] {
 
 main.newsletter button {
     background-color: #104239;
-    color: white;
+    color: #fefefe;
     border: none;
     padding: .75em 1.5em;
     border-radius: 2em;
@@ -350,4 +346,47 @@ main.newsletter button {
     section.secondary-teaser a p{
         flex: 0 0 4em;
     }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    h2 {
+    color: #86C6BA;
+}
+
+body {
+    background-color: #1b1b1f;
+}
+
+footer{
+    background-color: #86C6BA;
+}
+
+nav a {
+    color: #86C6BA;
+}
+
+p, ul {
+    color: #E0E0E0;
+}
+
+h1 {  
+    background-image: url("darklogo.svg");  
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    }
+
+h1 img {  
+    opacity: 0;  
+    }
+
+main.newsletter button {
+    background-color: #86C6BA;
+    color: #f3f3f3;
+}
+
+.tertiary-teaser {
+    border-bottom: solid 1px #86C6BA;
+}
+
 }
